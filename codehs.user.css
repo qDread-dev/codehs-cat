@@ -83,6 +83,8 @@
                 color: @subtext0 !important;
             }
         }
+        color: @text !important;
+        
         
         #logged-in-navbar {
          background-color: @mantle !important;   
@@ -102,6 +104,9 @@
             .no-dividers {
                 border-left: 2px solid transparent !important;
             }
+            #practice-nav-link {
+                border-right: 2px solid transparent !important;
+            }
             
             span, a {
                 color: @text !important;
@@ -111,9 +116,18 @@
         .alert {
             background-color: @accent-color !important;
         }
-        #user-page, #all-assignments-page {
+        
+        .sections-page {
             background-color: @base !important;
-            #student-sidenav-beta {
+            
+            a {
+                * {
+                    color: @text !important;
+                }
+                background-color: @surface1 !important;
+            }
+        }
+        #student-sidenav-beta {
                 .sidenav-header {
                     background-color: @base !important;    
                 }
@@ -124,6 +138,15 @@
                     background-color: @surface0;
                 }
             }
+        #user-page, #all-assignments-page1 {
+            background-color: @base !important;
+            .font-18{
+                color: @accent-color !important;
+                * {
+                    color: @accent-color !important;    
+                }
+            }
+            
             
             #wrapper, #assignments-page-wrapper {
             background-color: @base;
@@ -147,8 +170,19 @@
                 }
             }
             
+            .course-list-tile {
+                background-color: @surface0 !important;
+                border: 2px solid @surface0 !important;
+                .progressbar {
+                    div {
+                        background-color: @accent-color !important;
+                    }
+                }
+            }
             
         }
+        
+
         
         #course-sec {
             .module-sec {
