@@ -113,9 +113,7 @@
             }
         }
         
-        .alert {
-            background-color: @accent-color !important;
-        }
+        
         
         .sections-page {
             background-color: @base !important;
@@ -138,7 +136,8 @@
                     background-color: @surface0;
                 }
             }
-        #user-page, #all-assignments-page1 {
+        #user-page, #all-assignments-page1, #assignments-page-content {
+            
             background-color: @base !important;
             .font-18{
                 color: @accent-color !important;
@@ -146,12 +145,36 @@
                     color: @accent-color !important;    
                 }
             }
+            #user-profile {
+                background-color: @base !important;
+            }
+            #user-stats {
+                * {
+                    
+                background-color: @base !important;
+                }
+            }
+            .activity-placeholder, .activity-display {
+                
+                background-color: @surface0 !important;
+            }
+        }
             
             
             #wrapper, #assignments-page-wrapper {
-            background-color: @base;
+                
+                .alert {
+                    background-color: @accent-color !important;
+                    color: @mantle !important;
+                    * {
+                        color: @mantle !important;    
+                    }
+                }
+                
+                background-color: @base !important;
                 
             }
+            
             * {
                 color: @text !important;    
             }
@@ -170,18 +193,16 @@
                 }
             }
             
-            .course-list-tile {
-                background-color: @surface0 !important;
-                border: 2px solid @surface0 !important;
-                .progressbar {
-                    div {
-                        background-color: @accent-color !important;
-                    }
+        .course-list-tile {
+            background-color: @surface0 !important;
+            border: 2px solid @surface0 !important;
+            .progressbar {
+                div {
+                    background-color: @accent-color !important;
                 }
             }
-            
         }
-        
+            
 
         
         #course-sec {
