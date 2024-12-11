@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace github.com/qDread-dev/codehs-cat
-@version 0.0.1
+@version 0.0.3
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -300,6 +300,49 @@
             div:not(.percent-0) {
                 
                 background-color: @overlay0 !important;
+            }
+        }
+        
+        /* In lesson nav bar */
+        #editor-bottombar-nav {
+            background-color: @surface0 !important;
+            
+            /* Text Color */
+            .wrapper > .module > div  {
+                * {
+                color: @base !important;
+                    
+                }
+            }
+        }
+        /* Editor Text */
+        .view-lines {
+            .view-line {
+                
+                // Attributes
+                .mtk4 {
+                    color: @red !important;
+                }
+                // String
+                .mtk5 {
+                    color: @green !important;
+                }
+                // Number
+                .mtk6 {
+                    color: @peach !important;
+                }
+                // Comments
+                .mtk7 {
+                    color: @overlay0 !important;
+                    font-style: italic;
+                }
+                .mtk8 {
+                    color: @accent-color !important;
+                }
+                .mtk9 {
+                    color: @sapphire !important;
+                }
+                
             }
         }
 
