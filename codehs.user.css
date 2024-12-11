@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.9
+@version 0.0.10
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -470,6 +470,49 @@
                 background-color: @surface1 !important;
                 background-color: @surface1 !important;
             }
+        }
+        .L > div > div {
+            // the grade badge
+            .badge.bg-teal {
+                background-color: @green !important;
+                color: @base !important;
+            }
+            .badge.finalized {
+                background-color: @overlay0 !important;
+            }
+            
+        }
+        
+        // Assignment grading section
+        #assignment-grades-list {
+            .wrap {
+                background-color: @surface0 !important;
+            }
+        }
+        
+        // settings section
+        .iIJgxh {
+            background-color: @surface0 !important;
+            border-radius: 2px !important;
+            border-color: transparent !important;
+        }
+        
+        .brFRBV {
+            border-color: @overlay0 !important;
+            background-color: @surface0 !important;
+            
+        }
+        .hlkEXO {
+            border-color: @overlay0 !important;
+            background-color: @surface0 !important;
+            svg > path{
+                background-color: @surface0;
+                stroke: @accent-color !important;
+            }
+        }
+        
+        .fPaGdI {
+            background-color: @accent-color !important;
         }
         
         /* Editor Text */
