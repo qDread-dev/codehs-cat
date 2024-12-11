@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace github.com/qDread-dev/codehs-cat
-@version 0.0.2
+@version 0.0.1
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -86,6 +86,10 @@
         
         body {
             background-color: @base !important;
+            *::selection {
+                background-color: @rosewater !important;
+                color: @base !important;
+            }
         }
         color: @text !important;
         
@@ -287,9 +291,20 @@
         .module-item.submitted {
             background-color: @green !important;
         }
+        
+        /* Module info boxes */
+        .module-info-right {
+            .percent-0 {
+                background-color: @overlay2 !important;
+            }
+            div:not(.percent-0) {
+                
+                background-color: @overlay0 !important;
+            }
+        }
 
         /* Start styling your website here: */
-        background-color: @base;
+/*         background-color: @base; */
 
         /* If you need to specify an overwrite specific to a flavor
     *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
