@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.7
+@version 0.0.8
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -188,6 +188,21 @@
             
             #wrapper, #assignments-page-wrapper {
                 
+                #left {
+                    .action {
+                        background-color: @surface0 !important;
+                        .right {
+                            button {
+                                border-color: @accent-color;
+                            }
+                            #submit-button {
+                                color: @surface0 !important;
+                                background-color: @accent-color !important;
+                            }
+                        }
+                    }
+                }
+                
                 .alert {
                     background-color: @accent-color !important;
                     color: @mantle !important;
@@ -216,6 +231,8 @@
 
                     }
                 }
+                
+            
             }
             
         .course-list-tile {
@@ -477,6 +494,65 @@
                 }
                 
             }
+        }
+        #codehs-editor {
+            color: @text !important;
+            background-color: @base !important;
+            .ace_gutter {
+                background-color: @surface0 !important;
+            }
+            .ace_gutter-active-line {
+                background-color: @surface1 !important;
+            }
+        }
+        #problem-sidebar {
+            #problem-sidebar-tabs {
+                background-color: @base;
+                
+                li {
+                    a {
+                        
+                        background-color: @surface1 !important;
+                    }
+                    border-bottom: 2px solid @surface1 !important;
+                }
+                li.active {
+                    
+                    a {
+                        
+                        background-color: @surface0 !important;
+                    }
+                    
+                    border-bottom: 2px solid @surface0 !important;
+                }
+                
+            }
+            // show exercise button on sidebar
+            #problem-sidebar-content {
+                background-color: @base;
+                #sidebar-overview-tab {
+                    div {
+                        button {
+                            background-color: @surface0 !important;
+                        }
+                    }
+                }
+            }
+            #close-toggle {
+                background-color: @accent-color !important;
+                i {
+                    color: @base !important;
+                }
+            }
+        }
+        
+        .module-content .lesson-listing .lesson-content .current {
+            background-color: @surface0 !important;
+        }
+        
+        // has a weird line on the screen otherwise
+        .ace_print-margin {
+            visibility: hidden !important;
         }
         #panels {
             .t {
