@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.11
+@version 0.0.12
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -198,6 +198,38 @@
             background-color: @accent-color !important;
             i {
                 color: @base !important;
+            }
+        }
+        
+        // submit modal (quiz)
+        .modal-content {
+            .modal-header {
+                background-color: @accent-color !important;
+                border-color: @accent-color !important;
+                border-radius: 1px 1px 1px 1px;
+                
+                button, h3 {
+                    color: @base !important;
+                }
+            }
+            .modal-body { 
+                background-color: @mantle !important; 
+                
+                p, p > * {
+                
+                    color: @text !important;
+                }
+            }
+            .modal-footer {
+                background-color: @mantle !important;
+                border-color: @overlay0 !important;
+                a.btn-secondary {
+                    background-color: @surface1;
+                }
+                a.btn-main {
+                    background-color: @accent-color !important;
+                    color: @base !important;
+                }
             }
         }
         
