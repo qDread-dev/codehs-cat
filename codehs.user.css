@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
-@namespace github.com/qDread-dev/codehs-cat
-@version 0.0.5
+@namespace https://github.com/qDread-dev/codehs-cat
+@version 0.0.6
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -258,6 +258,8 @@
             }
             
         }
+        
+        
         .progressbar {
             .bg-slate {
                 background-color: @accent-color !important;    
@@ -290,6 +292,13 @@
         }
         .module-item.submitted {
             background-color: @green !important;
+        }
+        .module-item.finalized {
+            background-color: @green !important;
+        }
+        
+       .lesson-opened{
+            background-color: @surface1 !important;
         }
         
         /* Module info boxes */
@@ -341,6 +350,55 @@
         .n > div > .J {
             background-color: @surface0 !important;
         }
+        .co {
+            border-color: @accent-color !important;
+        }
+        .r {
+            background-color: @surface1 !important;
+            &.c {
+                background-color: @surface0 !important;
+            }
+        }
+        // Terminal
+        .s.a {
+            // top bar
+            background-color: @base !important;
+            // actual term
+           
+            
+        }
+        .k.a {
+            background-color: @surface0 !important;
+            div > .xterm-wrapper > * {
+                background-color: @surface0 !important;
+            }
+            
+            div > .xterm-wrapper > .terminal {
+                color: @text !important;
+                background-color: @surface0 !important;
+                border-color: @accent-color !important;
+                .xterm-viewport, .xterm-viewport > * {
+                    background-color: @surface0 !important;
+                }
+            }
+            
+        }
+        
+        /* Grading tab */
+        #current-grade-status {
+            &.finalized {
+                border-left-color: @teal !important;
+            }
+            
+            &::before {
+                color: @text !important;
+                background-color: @surface1 !important;
+            }
+            .grade-score-container {
+                background-color: @surface1 !important;
+                background-color: @surface1 !important;
+            }
+        }
         
         /* Editor Text */
         .view-lines {
@@ -385,6 +443,7 @@
                 background-color: @base !important;
             }
         }
+        
 
         /* Start styling your website here: */
 /*         background-color: @base; */
