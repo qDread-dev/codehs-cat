@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace github.com/qDread-dev/codehs-cat
-@version 0.0.1
+@version 0.0.2
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -82,6 +82,10 @@
             &::placeholder {
                 color: @subtext0 !important;
             }
+        }
+        
+        body {
+            background-color: @base !important;
         }
         color: @text !important;
         
@@ -255,6 +259,33 @@
                 background-color: @accent-color !important;    
             }
             
+        }
+        
+        /* Checkmarks for lessons */
+        
+        .lesson-status {
+            color: @base !important;
+        }
+        .lesson-items {
+            a {
+                span {
+                    
+            color: @base !important;
+                }
+            }
+        }
+        .lesson-status.not-submitted {
+            background-color: @yellow !important;
+            
+        }
+        .module-item.not-submitted {
+            background-color: @yellow !important;
+        }
+         .lesson-status.submitted {
+            background-color: @green !important;
+        }
+        .module-item.submitted {
+            background-color: @green !important;
         }
 
         /* Start styling your website here: */
