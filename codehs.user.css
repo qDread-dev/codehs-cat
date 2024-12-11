@@ -504,6 +504,13 @@
             .ace_gutter-active-line {
                 background-color: @surface1 !important;
             }
+            
+        }
+        #editor-full-size {
+                background-color: @accent-color !important;
+            span {
+                color: @base !important;
+            }
         }
         #problem-sidebar {
             #problem-sidebar-tabs {
