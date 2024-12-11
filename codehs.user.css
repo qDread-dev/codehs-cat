@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.10
+@version 0.0.11
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -162,6 +162,45 @@
                 background-color: @surface0;
             }
         }
+        
+        // search bar
+        
+        #filter-items {
+            background-color: @surface0 !important;
+            border-color: @surface1 !important;
+        }
+        
+        // quiz pages
+        .quiz-questions {
+            color: @text !important;
+            li {
+                background-color: @base !important;
+                
+            }
+            li pre {
+                background-color: @surface0 !important;
+            }
+            p > code {
+                background-color: @surface1 !important;
+                // not too set on using accent for this, might changer later
+                color: @accent-color !important;
+            }
+        }
+        
+        // quiz stats 
+        .stats-options-container {
+            background-color: @surface0 !important;
+            border-color: @surface1 !important;
+        }
+        
+        // sidebar toggle (quiz)
+        #open-toggle {
+            background-color: @accent-color !important;
+            i {
+                color: @base !important;
+            }
+        }
+        
         #user-page,
         #all-assignments-page1,
         #assignments-page-content,
