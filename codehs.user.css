@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.8
+@version 0.0.9
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -401,10 +401,16 @@
             background-color: @base !important;
         }
         #file-tab-bar {
-            background-color: @overlay0 !important;
-            div > div > span {
-                background-color: @surface0 !important;
-                border-bottom: 3px solid @accent-color !important;
+            background-color: @surface1 !important;
+            div > div {
+                span.fUWMBl {
+                    background-color: @surface0 !important;
+                    border-bottom: 3px solid @accent-color !important;
+                }
+                span.hhtNKK {
+                    background-color: @surface1 !important;
+                    border-bottom: 3px solid @accent-color !important;
+                }
             }
         }
         .w > div {
@@ -414,6 +420,7 @@
     
         .n > div > .J {
             background-color: @surface0 !important;
+            border-bottom: 1px solid @surface0 !important;
         }
         .co {
             border-color: @accent-color !important;
@@ -568,10 +575,49 @@
                 }
                 div > .Je {
                     background-color: @surface0 !important;
+                    div {
+                        ul {
+                            li {
+                                span {
+                                    background-color: @surface1 !important;
+                                }
+                            }
+                            li.c {
+                                span {
+                                    background-color: @surface0 !important;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .d, .d > * {
                 background-color: @base !important;
+            }
+        }
+        .P {
+            border-color: @surface1 !important;
+            button {
+            background-color: @surface0 !important;
+                
+            } 
+        }
+        .s.a {
+            background-color: @surface0 !important;
+            .uo {
+                background-color: @red !important;
+                color: @base !important;
+            }
+            .ho {
+                background-color: @green !important;
+                div > svg > path {
+                    color: @base !important;
+                }
+                
+                div {
+                    color: @base !important;
+                    
+                }
             }
         }
         
