@@ -89,6 +89,23 @@
         #logged-in-navbar {
          background-color: @mantle !important;   
         }
+        
+        .subsidenav-links {
+            li.active {
+                border-left: 2px solid @accent-color !important;
+            }
+            li {
+                    a {
+                        background-color: @base !important;
+                    }
+                a:hover {
+                    
+                    background-color: @surface1 !important;
+                }
+            }
+        }
+
+        
         #navbar-collapse-1 {
             background-color: @mantle !important;
             color: @text !important;
@@ -136,7 +153,7 @@
                     background-color: @surface0;
                 }
             }
-        #user-page, #all-assignments-page1, #assignments-page-content {
+        #user-page, #all-assignments-page1, #assignments-page-content, .tool-main-section, #tool-topnav {
             
             background-color: @base !important;
             .font-18{
