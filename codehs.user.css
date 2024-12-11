@@ -2,6 +2,7 @@
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
 @version 0.0.10
+@updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
 @license MIT
@@ -83,7 +84,7 @@
                 color: @subtext0 !important;
             }
         }
-        
+
         body {
             background-color: @base !important;
             *::selection {
@@ -92,39 +93,38 @@
             }
         }
         color: @text !important;
-        
-        
+
+
         #logged-in-navbar {
-         background-color: @mantle !important;   
+            background-color: @mantle !important;
         }
-        
+
         .subsidenav-links {
             li.active {
                 border-left: 2px solid @accent-color !important;
             }
             li {
-                    a {
-                        background-color: @base !important;
-                    }
+                a {
+                    background-color: @base !important;
+                }
                 a:hover {
-                    
+
                     background-color: @surface1 !important;
                 }
             }
         }
 
-        
+
         #navbar-collapse-1 {
             background-color: @mantle !important;
             color: @text !important;
-            
+
             button {
                 background-color: @surface0;
             }
-            
+
             li {
                 border-left: 2px solid @overlay0 !important;
-                
             }
             .no-dividers {
                 border-left: 2px solid transparent !important;
@@ -132,17 +132,18 @@
             #practice-nav-link {
                 border-right: 2px solid transparent !important;
             }
-            
-            span, a {
+
+            span,
+            a {
                 color: @text !important;
             }
         }
-        
-        
-        
+
+
+
         .sections-page {
             background-color: @base !important;
-            
+
             a {
                 * {
                     color: @text !important;
@@ -151,23 +152,27 @@
             }
         }
         #student-sidenav-beta {
-                .sidenav-header {
-                    background-color: @base !important;    
-                }
-                #sidenav-top-level {
-                    background-color: @surface0;
-                }
-                button {
-                    background-color: @surface0;
-                }
+            .sidenav-header {
+                background-color: @base !important;
             }
-        #user-page, #all-assignments-page1, #assignments-page-content, .tool-main-section, #tool-topnav {
-            
+            #sidenav-top-level {
+                background-color: @surface0;
+            }
+            button {
+                background-color: @surface0;
+            }
+        }
+        #user-page,
+        #all-assignments-page1,
+        #assignments-page-content,
+        .tool-main-section,
+        #tool-topnav {
+
             background-color: @base !important;
-            .font-18{
+            .font-18 {
                 color: @accent-color !important;
                 * {
-                    color: @accent-color !important;    
+                    color: @accent-color !important;
                 }
             }
             #user-profile {
@@ -175,66 +180,64 @@
             }
             #user-stats {
                 * {
-                    
-                background-color: @base !important;
+
+                    background-color: @base !important;
                 }
             }
-            .activity-placeholder, .activity-display {
-                
+            .activity-placeholder,
+            .activity-display {
+
                 background-color: @surface0 !important;
             }
         }
-            
-            
-            #wrapper, #assignments-page-wrapper {
-                
-                #left {
-                    .action {
-                        background-color: @surface0 !important;
-                        .right {
-                            button {
-                                border-color: @accent-color;
-                            }
-                            #submit-button {
-                                color: @surface0 !important;
-                                background-color: @accent-color !important;
-                            }
+
+
+        #wrapper,
+        #assignments-page-wrapper {
+
+            #left {
+                .action {
+                    background-color: @surface0 !important;
+                    .right {
+                        button {
+                            border-color: @accent-color;
+                        }
+                        #submit-button {
+                            color: @surface0 !important;
+                            background-color: @accent-color !important;
                         }
                     }
                 }
-                
-                .alert {
-                    background-color: @accent-color !important;
+            }
+
+            .alert {
+                background-color: @accent-color !important;
+                color: @mantle !important;
+                * {
                     color: @mantle !important;
+                }
+            }
+
+            background-color: @base !important;
+        }
+
+        * {
+            color: @text !important;
+        }
+        tbody {
+
+            tr {
+
+                td {
                     * {
-                        color: @mantle !important;    
+                        color: @text !important;
                     }
-                }
-                
-                background-color: @base !important;
-                
-            }
-            
-            * {
-                color: @text !important;    
-            }
-            tbody {
-                
-                tr{
 
-                    td {
-                        * {
-                            color: @text !important;
-                        }
-                        
-                        background-color: @surface0;
-
-                    }
+                    background-color: @surface0;
                 }
-                
-            
             }
-            
+        }
+
         .course-list-tile {
             background-color: @surface0 !important;
             border: 2px solid @surface0 !important;
@@ -244,16 +247,19 @@
                 }
             }
         }
-            
 
-        
+
+
         #course-sec {
             .module-sec {
-                .module-info, .lesson-sec, button, .wrap {
+                .module-info,
+                .lesson-sec,
+                button,
+                .wrap {
                     color: @text !important;
-                    background-color: @surface0 !important;        
+                    background-color: @surface0 !important;
                     *:not("module-item") {
-                        background-color: @surface0;    
+                        background-color: @surface0;
                         color: @text !important;
                     }
                 }
@@ -267,44 +273,38 @@
                             button {
                                 color: @text !important;
                             }
-                            
                         }
                     }
                 }
-                
             }
-            
         }
-        
-        
+
+
         .progressbar {
             .bg-slate {
-                background-color: @accent-color !important;    
+                background-color: @accent-color !important;
             }
-            
         }
-        
+
         /* Checkmarks for lessons */
-        
         .lesson-status {
             color: @base !important;
         }
         .lesson-items {
             a {
                 span {
-                    
-            color: @base !important;
+
+                    color: @base !important;
                 }
             }
         }
         .lesson-status.not-submitted {
             background-color: @yellow !important;
-            
         }
         .module-item.not-submitted {
             background-color: @yellow !important;
         }
-         .lesson-status.submitted {
+        .lesson-status.submitted {
             background-color: @green !important;
         }
         .module-item.submitted {
@@ -313,87 +313,82 @@
         .module-item.finalized {
             background-color: @green !important;
         }
-        
-       .lesson-opened{
+
+        .lesson-opened {
             background-color: @surface1 !important;
         }
-        
+
         /* Module info boxes */
         .module-info-right {
             .percent-0 {
                 background-color: @overlay2 !important;
             }
             div:not(.percent-0) {
-                
+
                 background-color: @overlay0 !important;
             }
         }
-        
+
         /* In lesson nav bar */
         #editor-bottombar-nav {
             background-color: @surface0 !important;
             .lesson-bar-breadcrumbs > a {
                 background-color: @overlay0 !important;
             }
-            
+
             /* Text Color */
-            .wrapper > .module  {
+            .wrapper > .module {
                 div * {
-                    
-                    
-                color: @base !important;
-                    
+
+
+                    color: @base !important;
                 }
             }
         }
-        
+
         #exercise-tab {
             background-color: @surface0 !important;
             color: @text !important;
-            
+
             .badge {
                 color: @base !important;
-                
             }
             .submitted {
-                    background-color: @green !important;
-            }   
+                background-color: @green !important;
+            }
             .points-badge {
                 background-color: @overlay0 !important;
-            }   
+            }
         }
         #lms-grading-tab-pane {
             background-color: @base !important;
             color: @text !important;
         }
         .nav-tabs {
-            li > a{
+            li > a {
                 background-color: @surface1!important;
             }
             li.active > a {
                 background-color: @surface0 !important;
             }
             li.dropdown {
-                .dropdown-menu{
-/*                     background-color: @surface0 !important; */
+                .dropdown-menu {
+                    /*                     background-color: @surface0 !important; */
                     background-image: linear-gradient(@surface0, @surface1) !important;
-/*                     &:last-child {
+                    /*                     &:last-child {
                         background-color: red !important;
                     } */
                 }
-                
+
                 .dropdown-menu li:nth-child(odd) a {
-                    background-color: @surface0 !important;   
-                            
+                    background-color: @surface0 !important;
                 }
                 .dropdown-menu li:nth-child(even) a {
-                    background-color: @surface1 !important;   
-                    
+                    background-color: @surface1 !important;
                 }
-                
             }
         }
-        
+
         .xterm-accessibility {
             opacity: 0;
         }
@@ -417,7 +412,7 @@
             background-color: @surface1 !important;
             border-color: @surface1 !important;
         }
-    
+
         .n > div > .J {
             background-color: @surface0 !important;
             border-bottom: 1px solid @surface0 !important;
@@ -430,38 +425,34 @@
             &.c {
                 background-color: @surface0 !important;
             }
-        }
-        // Terminal
+        } // Terminal
         .s.a {
             // top bar
-            background-color: @base !important;
-            // actual term
-           
-            
+            background-color: @base !important; // actual term
         }
         .k.a {
             background-color: @surface0 !important;
             div > .xterm-wrapper > * {
                 background-color: @surface0 !important;
             }
-            
+
             div > .xterm-wrapper > .terminal {
                 color: @text !important;
                 background-color: @surface0 !important;
                 border-color: @accent-color !important;
-                .xterm-viewport, .xterm-viewport > * {
+                .xterm-viewport,
+                .xterm-viewport > * {
                     background-color: @surface0 !important;
                 }
             }
-            
         }
-        
+
         /* Grading tab */
         #current-grade-status {
             &.finalized {
                 border-left-color: @teal !important;
             }
-            
+
             &::before {
                 color: @text !important;
                 background-color: @surface1 !important;
@@ -480,58 +471,49 @@
             .badge.finalized {
                 background-color: @overlay0 !important;
             }
-            
-        }
-        
-        // Assignment grading section
+        } // Assignment grading section
         #assignment-grades-list {
             .wrap {
                 background-color: @surface0 !important;
             }
-        }
-        
-        // settings section
+        } // settings section
         .iIJgxh {
             background-color: @surface0 !important;
             border-radius: 2px !important;
             border-color: transparent !important;
         }
-        
+
         .brFRBV {
             border-color: @overlay0 !important;
             background-color: @surface0 !important;
-            
         }
         .hlkEXO {
             border-color: @overlay0 !important;
             background-color: @surface0 !important;
-            svg > path{
+            svg > path {
                 background-color: @surface0;
                 stroke: @accent-color !important;
             }
         }
-        
+
         .fPaGdI {
             background-color: @accent-color !important;
         }
-        
+
         /* Editor Text */
         .view-lines {
             .view-line {
-                
+
                 // Attributes
                 .mtk4 {
                     color: @red !important;
-                }
-                // String
+                } // String
                 .mtk5 {
                     color: @green !important;
-                }
-                // Number
+                } // Number
                 .mtk6 {
                     color: @peach !important;
-                }
-                // Comments
+                } // Comments
                 .mtk7 {
                     color: @overlay0 !important;
                     font-style: italic;
@@ -542,7 +524,6 @@
                 .mtk9 {
                     color: @sapphire !important;
                 }
-                
             }
         }
         #codehs-editor {
@@ -554,10 +535,9 @@
             .ace_gutter-active-line {
                 background-color: @surface1 !important;
             }
-            
         }
         #editor-full-size {
-                background-color: @accent-color !important;
+            background-color: @accent-color !important;
             span {
                 color: @base !important;
             }
@@ -565,26 +545,24 @@
         #problem-sidebar {
             #problem-sidebar-tabs {
                 background-color: @base;
-                
+
                 li {
                     a {
-                        
+
                         background-color: @surface1 !important;
                     }
                     border-bottom: 2px solid @surface1 !important;
                 }
                 li.active {
-                    
+
                     a {
-                        
+
                         background-color: @surface0 !important;
                     }
-                    
+
                     border-bottom: 2px solid @surface0 !important;
                 }
-                
-            }
-            // show exercise button on sidebar
+            } // show exercise button on sidebar
             #problem-sidebar-content {
                 background-color: @base;
                 #sidebar-overview-tab {
@@ -602,18 +580,17 @@
                 }
             }
         }
-        
+
         .module-content .lesson-listing .lesson-content .current {
             background-color: @surface0 !important;
-        }
-        
-        // has a weird line on the screen otherwise
+        } // has a weird line on the screen otherwise
         .ace_print-margin {
             visibility: hidden !important;
         }
         #panels {
             .t {
-                .N, .N > div {
+                .N,
+                .N > div {
                     background-color: @base !important;
                 }
                 div > .Je {
@@ -634,16 +611,16 @@
                     }
                 }
             }
-            .d, .d > * {
+            .d,
+            .d > * {
                 background-color: @base !important;
             }
         }
         .P {
             border-color: @surface1 !important;
             button {
-            background-color: @surface0 !important;
-                
-            } 
+                background-color: @surface0 !important;
+            }
         }
         .s.a {
             background-color: @surface0 !important;
@@ -656,18 +633,16 @@
                 div > svg > path {
                     color: @base !important;
                 }
-                
+
                 div {
                     color: @base !important;
-                    
                 }
             }
         }
-        
+
 
         /* Start styling your website here: */
-/*         background-color: @base; */
-
+        /*         background-color: @base; */
         /* If you need to specify an overwrite specific to a flavor
     *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
         & when (@lookup =latte) {
