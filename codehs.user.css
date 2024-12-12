@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.12
+@version 0.0.13
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -94,10 +94,6 @@
         }
         color: @text !important;
 
-
-        #logged-in-navbar {
-            background-color: @mantle !important;
-        }
 
         .subsidenav-links {
             li.active {
@@ -233,6 +229,57 @@
             }
         }
         
+        // sandbox
+        
+        #create-container {
+            background-color: @surface0 !important;
+            #sandbox-title-input {
+                background-color: @surface1 !important;
+                border-color: @surface1 !important;
+            }
+            .btn-group > button {
+                background-color: @accent-color !important;
+                &, .caret, .fas {
+                    color: @base !important;
+                }
+            }
+        }
+        .sandbox-program-container {
+            .codehs-table-header {
+                background-color: @accent-color !important;
+                
+                * {
+                    color: @base !important;
+                }
+            }
+            .header {
+                background-color: @surface0 !important;
+                div {
+                    select, span {
+                        &, input,label {
+                        border-color: @surface1 !important;
+                            
+                            background-color: @surface1 !important;
+                        }
+                        label::after {
+                            visibility: hidden;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .explore-container {
+            background-color: @surface0 !important;
+            a {
+                background-color: @accent-color !important;
+                color: @base !important;
+            }
+        }
+        
+        
+        
+        // main page
         #user-page,
         #all-assignments-page1,
         #assignments-page-content,
@@ -710,6 +757,72 @@
                 }
             }
         }
+        
+        // notes page
+        .assignments-page {
+            background-color: @base !important;
+            .wrap {
+                color: @text !important;
+                background-color: @surface0 !important;
+                
+                .ql-toolbar > .ql-formats > button > svg, .ql-toolbar > .ql-formats > span >span svg {
+                    * {
+                        stroke: @text !important;
+                        
+                    }
+                }
+            }
+        }
+        // account settings
+        .btn-main {
+            background-color: @accent-color !important;
+            color: @base !important;
+        }
+        .codehs-table {
+            .codehs-table-header {
+                background-color: @accent-color !important;
+            }
+        }
+        .end-session {
+            background-color: @red !important;
+            color: @base !important;
+        }
+        .btn.dropdown-toggle {
+            background-color: @surface0 !important;
+            border: none;
+        }
+        #download-code-button {
+            background-color: @surface0 !important;
+        }
+        
+        a.btn.btn-main-slate {
+            background-color: @surface0 !important;
+        }
+        
+        // navbar, notifications
+        #logged-in-navbar { 
+            background-color: @mantle !important;
+            #notification-menu {
+            background-color: @surface0 !important;
+                li {
+                    color: @text !important;
+                    &.dropdown-label {
+                        a {
+                            color: @blue !important;
+                        }
+                    }
+                    a:hover {
+                        color: @base !important;
+                        background-color: @accent-color !important;
+                        span {
+                            color: @base !important;
+                        }
+    
+                    }
+                } 
+            }
+        }
+
 
 
         /* Start styling your website here: */
