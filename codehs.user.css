@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.13
+@version 0.0.14
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -276,7 +276,7 @@
                 color: @base !important;
             }
         }
-        
+
         
         
         // main page
@@ -328,14 +328,7 @@
                 }
             }
 
-            .alert {
-                background-color: @accent-color !important;
-                color: @mantle !important;
-                * {
-                    color: @mantle !important;
-                }
-            }
-
+            
             background-color: @base !important;
         }
 
@@ -822,8 +815,170 @@
                 } 
             }
         }
+        // certs
+        #certifications-page {
+            background-color: @base !important;
+            #learn-more-btn {
+                background-color: @green !important;
+                color: @base !important;
+            }
+            .certifications-list {
+                div {
+                    background-color: @surface0 !important;
+                    .certification-action-wrapper {
+                        input {
+                            background-color: @surface1 !important;
+                            border-color: @surface2 !important;
+                        }
+                    }
+                }
+            }
+        }
+        
+        // badges
+        
+        .all-badges-page .wrapper .all-badges-content div {
+            background-color: @base !important;
+        }
+    
+        // practice
+        #practice-wrapper {
+            background-color: @base !important;
+            .practice-top-nav-languages .playlist-option{
+                background-color: @surface0 !important;
+                border-color: @surface1 !important;
+                a {
+                    background-color: @accent-color !important;
+                    border-color: @accent-color !important;
+                    span {
+                        color: @base !important;
+                    }
+                }
+            }
+            #practice-page-content .practice-section .practice-modules {
+                
+                .practice-problem-container {
+                    .practice-module {
+                        background-color: @surface0 !important;
+                        .module-title-right span{
+                            color: @accent-color !important;
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        // faq
+        .marketing-page-new {
+            background-color: @base !important;
+            .faq-content .faq-list .faq-question span {
+                color: @accent-color !important;
+            }
+        }
+        
+        // announcments
+        .announcements-dropdown {
+            background-color: @surface0 !important;
+            border-color: @surface1 !important;
+        }
 
-
+        // shared programs
+        .shared-programs-container .wrap  {
+            ul li.shared-item {
+                background-color: @surface0 !important;
+                a {
+                    color: @blue !important;
+                }
+            }
+        }
+        
+        // sandbox quickstart
+        .page-body {
+            background-color: @base !important;
+            
+        }
+        label.progtype-label input {
+            accent-color: @accent-color !important;
+        }
+        
+        // QOTD
+        
+        #quiz-docs-toggle {
+            background-color: @accent-color !important;
+            &, span {
+                color: @base !important;
+            }
+        }
+        .check-answer-button {
+            background-color: @peach !important;
+        }
+        .qotd-message, .qotd-subscribe-banner {
+            background-color: @blue !important;
+            color: @mantle !important;
+            * {
+                color: @mantle !important;
+            }
+        }
+        .qotd-subscribe-banner {
+            a {
+                border-color: @accent-color !important;;
+            }
+        }
+        .marketing-course-card {
+            background-color: @surface0;
+            &::before {
+                background-color: @overlay0 !important;
+            }
+        }
+        
+        // career center (make it readable)
+        .industries-section-header-content, .industries-section {
+            background-color: @base !important;
+        }
+        #footer #footer-content {
+            background-color: @mantle !important;
+            .share.btn {
+                background-color: @base;
+            }
+        }
+        
+        // glossary
+        
+        #tool-utilities {
+            background-color: @base !important;
+        }
+        #filter-terms {
+            background-color: @surface0 !important;
+            border-color: @surface1 !important;
+        }
+        .definition code {
+            background-color: @surface0 !important;
+            color: @accent-color !important;
+        }
+        
+        // join class
+        .wrap.text-left {
+            background-color: @surface0 !important;
+            form {
+                input {
+                    background-color: @surface1 !important;
+                    border-color: transparent;
+                }
+                button {
+                    background-color: @accent-color;
+                    color: @base !important;
+                }
+            }
+        }
+        
+        // textbooks
+        .textbook-card {
+            background-color: @surface0 !important;
+            .card-decoration {
+                background-color: @surface2 !important;
+            }
+        }
 
         /* Start styling your website here: */
         /*         background-color: @base; */
