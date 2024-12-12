@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.18
+@version 0.0.19
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -1104,9 +1104,16 @@
                 }
                 
                 &.directions #markdown-description {
-                    p code {
+                    p > code {
                         background-color: @surface1;
                         color: @accent-color !important;
+                    }
+                    pre:has(code) {
+                        background-color: @surface1 !important;
+                        border-color: @surface1 !important;
+                        code {
+                            color: @accent-color !important;
+                        }
                     }
                 }
             }
