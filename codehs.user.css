@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.19
+@version 0.0.20
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -518,6 +518,16 @@
                 background-color: @overlay0 !important;
             }
         }
+        .markdown-exercise-description {
+            pre:has(code) {
+                        background-color: @surface1 !important;
+                        border-color: @surface1 !important;
+                        code {
+                            color: @accent-color !important;
+                        }
+                    }
+            
+        }
         #lms-grading-tab-pane {
             background-color: @base !important;
             color: @text !important;
@@ -836,6 +846,50 @@
                 border-color: @surface0;
             }
         }
+        
+        
+        // grading bar
+        #green-bar {
+            background-color: @green !important;
+        }
+        
+        // test-cases grader table
+        #grading-container > table {
+            thead {
+                background-color: @base !important;
+                background-color: @accent-color;
+                border-color: @surface1;
+                box-shadow: none;
+                tr {
+                    background-color: @base;
+                    th {
+                        border-color: transparent;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                        border-color: @surface1 !important;
+                    th.bottom-border {
+                        color: @base !important;
+                    }
+                    th.hidden-row {
+                        border-color: @surface1 !important;
+                    }
+                    .test-case-spacing {
+                        .green-circle {
+                            background-color: @green !important;
+                            span {
+                                color: @base !important;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        
         // notes page
         .assignments-page {
             background-color: @base !important;
