@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.16
+@version 0.0.17
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
-@license MIT
+@license Apache 2.0
 
 @preprocessor less
 @var select lightFlavor "Light Flavor" ["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
@@ -1062,6 +1062,33 @@
             background-color: @surface0 !important;
             .card-decoration {
                 background-color: @surface2 !important;
+            }
+        }
+        
+        
+        // asignment library
+        #library-main {
+            background-color: @base !important;
+            .card-list {
+                .lesson.card {
+                    background-color: @surface0 !important;
+                    border-color: @surface1 !important;
+                    
+                    
+                    
+                    .item-list {
+                        a.item-listing {
+                            border-color: @overlay0 !important;
+                            span > span::before {
+                                color: @green !important;
+                            }
+                            &:hover {
+                                background-color: @surface1 !important;
+                            }
+                        }
+                        
+                    }
+                }
             }
         }
 
