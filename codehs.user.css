@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.15
+@version 0.0.16
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -798,10 +798,14 @@
         }
         .s.a {
             background-color: @surface0 !important;
+            
+            // stop code
             .uo {
                 background-color: @red !important;
                 color: @base !important;
             }
+            
+            // run code
             .ho {
                 background-color: @green !important;
                 div > svg > path {
@@ -812,8 +816,26 @@
                     color: @base !important;
                 }
             }
+            // check code
+            .button {
+                background-color: @pink !important;
+                color: @base !important;
+            }
         }
-        
+        #grading-unit-test-run {
+            background-color: @accent-color !important;
+            span {
+                
+                color: @base !important;
+            }
+        }
+        // test-cases min / expand
+        .expand-minimize {
+            button {
+                background-color: @surface0;
+                border-color: @surface0;
+            }
+        }
         // notes page
         .assignments-page {
             background-color: @base !important;
