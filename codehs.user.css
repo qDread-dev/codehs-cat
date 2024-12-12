@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.14
+@version 0.0.15
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
-@license Apache 2
+@license MIT
 
 @preprocessor less
 @var select lightFlavor "Light Flavor" ["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
@@ -168,9 +168,52 @@
         
         // quiz pages
         .quiz-questions {
+            .status-text{
+                &.correct-text {
+                    color: @green !important;
+                }
+                &.incorrect-text {
+                    color: @red !important;
+                }
+            }
+            .fa-check {
+                &::before {
+                    color: @green !important;
+                }
+            }
+            .fa-times {
+                &::before {
+                    color: @red !important;
+                }
+            }
             color: @text !important;
             li {
                 background-color: @base !important;
+                ol li {
+                    
+                    label {
+/*                         input {
+                            color: red;
+                            accent-color: red !important;
+                        } */
+                        * {
+                            accent-color: red !important;
+                        }
+                    }
+                    
+                    
+                    label.correct-answer {
+                        background-color: @green !important;
+                        span > p {
+                            color: @base !important;
+                        }
+                        
+                    }
+                    label.correct-answer:hover {
+                        filter: brightness(75%);
+                    } 
+                    
+                }
                 
             }
             li pre {
@@ -183,6 +226,10 @@
             }
         }
         
+        #student-retake {
+            background-color: @green;
+            color: @base !important;
+        }
         // quiz stats 
         .stats-options-container {
             background-color: @surface0 !important;
@@ -582,7 +629,18 @@
             .badge.finalized {
                 background-color: @overlay0 !important;
             }
-        } // Assignment grading section
+            .badge.submitted {
+                background-color: @green !important;
+                color: @base !important;
+            }
+        }
+        .L > div > div > .prism-highlight {
+            span > p > code {
+                background-color: @surface0 !important;
+                color: @accent-color !important;
+            }
+        }
+        // Assignment grading section
         #assignment-grades-list {
             .wrap {
                 background-color: @surface0 !important;
@@ -637,6 +695,11 @@
                 }
             }
         }
+        
+        .monaco-editor-background, .margin-view-overlays {
+            background-color: @base;
+        }
+        
         #codehs-editor {
             color: @text !important;
             background-color: @base !important;
