@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.21
+@version 0.0.22
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -73,8 +73,7 @@
         @accent-color: @catppuccin[@@lookup][@@accent];
 
         color-scheme: if(@lookup =latte, light, dark);
-1
-        ::selection {
+        1 ::selection {
             background-color: fade(@accent-color, 30%);
         }
 
@@ -102,8 +101,7 @@
                 a {
                     background-color: @base !important;
                     &:hover {
-                    background-color: @surface1 !important;
-                        
+                        background-color: @surface1 !important;
                     }
                 }
             }
@@ -156,26 +154,24 @@
             button {
                 background-color: @surface0;
             }
-        }
-        
-        // search bar
-        
-        
-        
+        } // search bar
         // assignments page 
         #assignments-page-content {
-            #search-title{
+            #search-title {
                 #filter-items {
                     background-color: @surface0 !important;
                     border-color: @surface1 !important;
                 }
-            }
+            } // user-profile section on the bottom
             #user-profile {
-                &, #user-info > #user-stats-table > #user-stats > tbody > tr > * {
+                &,
+                #user-info > #user-stats-table > #user-stats > tbody > tr > * {
                     background-color: @base !important;
+                    border-color: transparent !important;
                 }
                 #user-info > #user-stats-table > #user-stats > tbody > tr > * {
-                    border-color: @surface0 !important;
+                    // style inside of table
+                    border-color: @surface0 !important; // progress bar
                     &#recent-module > .course-progress-info > #progressbar-container > .progressbar {
                         background-color: @overlay0 !important;
                         div {
@@ -184,15 +180,16 @@
                     }
                 }
             }
-            
+
             #course-sec {
                 .module-sec {
                     .lesson-item-wrapper {
                         color: @text !important;
                         background-color: @surface1 !important;
                     }
-                    
-                    button, .wrap {
+
+                    button,
+                    .wrap {
                         color: @text !important;
                         background-color: @surface0 !important;
                         *:not("module-item") {
@@ -205,50 +202,46 @@
                             background-color: @overlay2 !important;
                         }
                         div:not(.percent-0) {
-            
+
                             background-color: @overlay0 !important;
                         }
-                    }
-                    
-                    // lesson checkmarks
-                    .lessons-sec .lazy-wrap .lesson-sec .lesson-header  {
+                    } // lesson checkmarks
+                    .lessons-sec .lazy-wrap .lesson-sec .lesson-header {
                         .lesson-header-text .lesson-link .lesson-status {
                             color: @base !important;
                             &.not-submitted {
                                 background-color: @yellow !important;
                             }
-                            &.submitted, &.finalized {
+                            &.submitted,
+                            &.finalized {
                                 background-color: @green !important;
                             }
                         }
                         .right .lesson-items .module-item {
                             span {
                                 color: @base !important;
-                                
                             }
                             &.not-submitted {
                                 background-color: @yellow !important;
                             }
-                            &.submitted, &.finalized {
+                            &.submitted,
+                            &.finalized {
                                 background-color: @green !important;
                             }
                         }
                     }
-                    
                 }
             }
-        }
-        
-         // asignment library
+        } // asignment library
         #library-main {
             background-color: @base !important;
             .card-list {
                 .lesson.card {
                     background-color: @surface0 !important;
                     border-color: @surface1 !important;
-                    
-                    
-                    
+
+
+
                     .item-list {
                         a.item-listing {
                             border-color: @overlay0 !important;
@@ -259,22 +252,19 @@
                                 background-color: @surface1 !important;
                             }
                         }
-                        
                     }
-                }
-                // library card
+                } // library card
                 .module.card {
                     background-color: @surface0 !important;
-                    border-color: @surface1 !important;
-                    
-                    // icons
+                    border-color: @surface1 !important; // icons
                     .lesson-list .lesson-listing {
                         .thumbnail-wrapper a {
                             span {
                                 color: @base !important;
                             }
-                            
-                            &.finalized, &.submitted {
+
+                            &.finalized,
+                            &.submitted {
                                 background-color: @green !important;
                             }
                             &.not-submitted {
@@ -285,38 +275,40 @@
                             span {
                                 color: @base !important;
                             }
-                            &.finalized, &.submitted {
+                            &.finalized,
+                            &.submitted {
                                 background-color: @green !important;
                             }
                             &.not-submitted {
                                 background-color: @yellow !important;
                             }
-                        
                         }
                     }
                 }
             }
         }
-        
-                /* In lesson nav bar */
+
+        /* In lesson nav bar */
         #editor-bottombar-nav {
             background-color: @surface0 !important;
 
-            
+
             .wrapper .module {
                 .lesson-bar-breadcrumbs {
 
-                    .module-item, .module-breadcrumb {
+                    .module-item,
+                    .module-breadcrumb {
                         background-color: @overlay0;
                     }
-                    
+
                     .icon-caret-right::before {
                         color: @text !important;
                     }
                 }
                 .lesson-group {
                     a {
-                        &.finalized, &.submitted {
+                        &.finalized,
+                        &.submitted {
                             background-color: @green !important;
                         }
                         &.not-submitted {
@@ -337,20 +329,17 @@
                     color: @base !important;
                 }
             }
-        }
-        
-        
-        // quiz pages
+        } // quiz pages
         .take-quiz-page {
-            
+
             .quiz-questions {
-                
+
                 li {
                     background-color: @base;
                     span.correct {
                         .correct-text {
                             color: @green !important;
-                        }    
+                        }
                         .incorrect-text {
                             color: @red !important;
                         }
@@ -369,14 +358,14 @@
                         color: @accent-color !important;
                     }
                 }
-                
+
                 .quiz-question-answers {
                     li {
-                        
-                    border-color: @overlay0 !important;
+
+                        border-color: @overlay0 !important;
                     }
 
-                    li > label{
+                    li > label {
                         &:hover {
                             filter: brightness(75%);
                         }
@@ -389,98 +378,89 @@
                         &.incorrect-answer {
                             background-color: @red !important;
                         }
-                        
+
                         .correctness-info span {
-                            color: @base !important; 
+                            color: @base !important;
                         }
                     }
                 }
             }
-            
+
             .allow-retake-container {
                 #student-retake {
                     background-color: @green;
                     color: @base !important;
-                }   
-            }
-             // quiz stats 
+                }
+            } // quiz stats 
             .stats-options-container {
                 background-color: @surface0 !important;
                 border-color: @surface1 !important;
             }
         }
-        
+
         #abacus #panels {
-            
+
             #status-message {
                 background-color: @green;
                 color: @base !important;
-                span, span::before {
+                span,
+                span::before {
                     color: @base !important;
                 }
-            }
-            
-            .d, .d > button {
+            } // icon on sidebar, bottom left
+            .d,
+            .d > button {
                 background-color: @crust !important;
-                
-            }
-            .t  {
-                
-                
+            } // the rest of the sidebar
+            .t {
+                // edge of sidebar
                 div.N.t {
-                    &, & > div {
+                    &,
+                    & > div {
                         background-color: @crust !important;
                     }
-                }
-                div:not(.N.t) div #problem-sidebar{
-                    
-                background-color: @mantle !important;
+                } // sidebar "assignment section"
+                div:not(.N.t) div #problem-sidebar {
+                    background-color: @mantle !important;
+                    #problem-sidebar-tabs {
+                        background-color: @crust !important;
+
+                        li {
+                            border-bottom: 2px solid @surface1 !important;
+                            a {
+
+                                background-color: @surface1 !important;
+                            }
+
+                            &.active {
+                                border-bottom: 2px solid @surface0 !important;
+                                a {
+
+                                    background-color: @surface0 !important;
+                                }
+                            }
+                        }
+                    } // show exercise button on sidebar
+                    #problem-sidebar-content {
+                        background-color: @base;
+                        #sidebar-overview-tab {
+                            div {
+                                button {
+                                    background-color: @surface0 !important;
+                                }
+                            }
+                        }
+                    }
+                    #open-toggle,
+                    #close-toggle {
+                        background-color: @accent-color !important;
+                        i {
+                            color: @base !important;
+                        }
+                    }
                 }
             }
         }
-        
-        #problem-sidebar {
-            #problem-sidebar-tabs {
-                background-color: @crust !important;
-                
-                li {
-                    border-bottom: 2px solid @surface1 !important;
-                    a {
-
-                        background-color: @surface1 !important;
-                    }
-                    
-                    &.active {
-                    border-bottom: 2px solid @surface0 !important;
-                        a {
-    
-                            background-color: @surface0 !important;
-                        }
-
-                    }
-                }
-            }
-            // show exercise button on sidebar
-            #problem-sidebar-content {
-                background-color: @base;
-                #sidebar-overview-tab {
-                    div {
-                        button {
-                            background-color: @surface0 !important;
-                        }
-                    }
-                }
-            }
-            #open-toggle, #close-toggle {
-                background-color: @accent-color !important;
-                i {
-                    color: @base !important;
-                }
-            }
-        }
-        
-        
-       
         
         // submit modal (quiz)
         .modal-content {
@@ -488,16 +468,18 @@
                 background-color: @accent-color !important;
                 border-color: @accent-color !important;
                 border-radius: 1px 1px 1px 1px;
-                
-                button, h3 {
+
+                button,
+                h3 {
                     color: @base !important;
                 }
             }
-            .modal-body { 
-                background-color: @mantle !important; 
-                
-                p, p > * {
-                
+            .modal-body {
+                background-color: @mantle !important;
+
+                p,
+                p > * {
+
                     color: @text !important;
                 }
             }
@@ -512,11 +494,7 @@
                     color: @base !important;
                 }
             }
-        }
-        
-        // sandbox
-        
-        
+        } // sandbox
         #sandbox-page > #sandbox-page-content {
             #create-container {
                 background-color: @surface0 !important;
@@ -526,7 +504,9 @@
                 }
                 .btn-group > button {
                     background-color: @accent-color !important;
-                    &, .caret, .fas {
+                    &,
+                    .caret,
+                    .fas {
                         color: @base !important;
                     }
                 }
@@ -534,18 +514,19 @@
             #more-buttons-container {
                 .btn-main-green {
                     background-color: @green !important;
-                    &, & > span::before{
+                    &,
+                    & > span::before {
                         color: @base !important;
                     }
                 }
             }
         }
-        
-        
+
+
         .sandbox-program-container {
             .codehs-table-header {
                 background-color: @accent-color !important;
-                
+
                 * {
                     color: @base !important;
                 }
@@ -553,16 +534,18 @@
             .header {
                 background-color: @surface0 !important;
                 div {
-                    select, span {
-                        &, input,label {
-                        border-color: @surface1 !important;
-                            
+                    select,
+                    span {
+                        &,
+                        input,
+                        label {
+                            border-color: @surface1 !important;
+
                             background-color: @surface1 !important;
                         }
                         label::after {
                             visibility: hidden;
                         }
-                        
                     }
                 }
             }
@@ -575,37 +558,6 @@
             }
         }
 
-        
-        
-        // main page
-/*         #user-page,
-        #all-assignments-page1,
-        #assignments-page-content,
-        .tool-main-section,
-        #tool-topnav {
-
-            background-color: @base !important;
-            .font-18 {
-                color: @accent-color !important;
-                * {
-                    color: @accent-color !important;
-                }
-            }
-            #user-profile {
-                background-color: @base !important;
-            }
-            #user-stats {
-                * {
-
-                    background-color: @base !important;
-                }
-            }
-            .activity-placeholder,
-            .activity-display {
-
-                background-color: @surface0 !important;
-            }
-        } */
 
 
         #wrapper,
@@ -626,7 +578,7 @@
                 }
             }
 
-            
+
             background-color: @base !important;
         }
 
@@ -667,17 +619,127 @@
         }
 
         /* Checkmarks for lessons */
-
-
         .lesson-opened {
             background-color: @surface1 !important;
         }
-
         
+        
+        #abacus #panels div.n {
+            #right-tab-bar {
+                div.r {
+                    &.c {
+                        background-color: @base !important;
+                    }
+                    & {
+                        background-color: @surface0 !important;
+                        // dividor
+                        &::before {
+                            background-color: @overlay1 !important;
+                            
+                        }
+                    }
+                }
+            }
+            
+            .L {
+                background-color: @base !important;
+                
+                div > div {
+                    // terminal tab top bar
+                    div.s.a {
+                        background-color: @base !important; 
+                                    // stop code
+                        .uo {
+                            background-color: @red !important;
+                            color: @base !important;
+                        } // run code
+                        .ho {
+                            background-color: @green !important;
+                            div > svg > path {
+                                color: @base !important;
+                            }
+            
+                            div {
+                                color: @base !important;
+                            }
+                        } // check code
+                        .button {
+                            background-color: @pink !important;
+                            color: @base !important;
+                        }
+                    }
+                    // terminal container
+                    div.k.a {
+                        background-color: @base !important;
+                        div > .xterm-wrapper > .terminal {
+                            color: @text !important;
+                            background-color: @surface0 !important;
+                            border-color: @accent-color !important;
+                            .xterm-viewport,
+                            .xterm-viewport > * {
+                                background-color: @surface0 !important;
+                            }
+                        }
+                    }
+                    
+                    // problem description
+                    .prism-highlight .markdown-exercise-description {
+                        pre:has(code) {
+                            background-color: @surface1 !important;
+                            border-color: @surface1 !important;
+                            code {
+                                color: @accent-color !important;
+                            }
+                        }
+                        p:has(code) {
+                            border-color: @surface1 !important;
+                            code {
+                                background-color: @surface1 !important;
+                                color: @accent-color !important;
+                            }
+                        }
+                    }
+                    // grading tab
+                    #lms-grading-tab-pane {
+                        background-color: @base !important;
+                        color: @text !important;
+                    }
+                    
+                    // test-cases tab
+                    &.editor-tab-content > #grading-tab {
+                        #grading-container {
+                            table thead {
+                                border-bottom: 2px solid white !important
+                            }
+                            
+                        }
+                        
+                        div.error-box {
+                            ol.error-container li.error-entry {
+                                background-color: @surface0 !important;
+                                border-color: @surface1 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+        
+        // docs tab (out here as its an embed)
+        
+        div#documentation-tab.tab-pane {
+            background-color: @base;
+            .docs-dropdown-nav {
+                background-color: @base !important;
+            }
+        }
 
 
 
-        #exercise-tab, #grading-tab {
+
+
+/*         #exercise-tab,
+        #grading-tab {
             background-color: @surface0 !important;
             color: @text !important;
 
@@ -690,28 +752,9 @@
             .points-badge {
                 background-color: @overlay0 !important;
             }
-        }
-        .markdown-exercise-description {
-            pre:has(code) {
-                background-color: @surface1 !important;
-                border-color: @surface1 !important;
-                code {
-                    color: @accent-color !important;
-                }
-            }
-            p:has(code) {
-                border-color: @surface1 !important;
-                code {
-                background-color: @surface1 !important;
-                    color: @accent-color !important;
-                }
-            }
-            
-        }
-        #lms-grading-tab-pane {
-            background-color: @base !important;
-            color: @text !important;
-        }
+        } */
+        
+        
         .nav-tabs {
             li > a {
                 background-color: @surface1!important;
@@ -773,26 +816,6 @@
             &.c {
                 background-color: @surface0 !important;
             }
-        } // Terminal
-        .s.a {
-            // top bar
-            background-color: @base !important; // actual term
-        }
-        .k.a {
-            background-color: @surface0 !important;
-            div > .xterm-wrapper > * {
-                background-color: @surface0 !important;
-            }
-
-            div > .xterm-wrapper > .terminal {
-                color: @text !important;
-                background-color: @surface0 !important;
-                border-color: @accent-color !important;
-                .xterm-viewport,
-                .xterm-viewport > * {
-                    background-color: @surface0 !important;
-                }
-            }
         }
 
         /* Grading tab */
@@ -829,8 +852,7 @@
                 background-color: @surface0 !important;
                 color: @accent-color !important;
             }
-        }
-        // Assignment grading section
+        } // Assignment grading section
         #assignment-grades-list {
             .wrap {
                 background-color: @surface0 !important;
@@ -859,6 +881,8 @@
             background-color: @accent-color !important;
         }
 
+
+
         /* Editor Text */
         .view-lines {
             .view-line {
@@ -885,11 +909,12 @@
                 }
             }
         }
-        
-        .monaco-editor-background, .margin-view-overlays {
+
+        .monaco-editor-background,
+        .margin-view-overlays {
             background-color: @base;
         }
-        
+
         #codehs-editor {
             color: @text !important;
             background-color: @base !important;
@@ -917,10 +942,10 @@
             .t {
                 .N,
                 .N > div {
-/*                     background-color: @base !important; */
+                    /*                     background-color: @base !important; */
                 }
                 div > .Je {
-/*                     background-color: @surface0 !important; */
+                    /*                     background-color: @surface0 !important; */
                     div {
                         ul {
                             li {
@@ -939,7 +964,7 @@
             }
             .d,
             .d > * {
-/*                 background-color: @base !important; */
+                /*                 background-color: @base !important; */
             }
         }
         .P {
@@ -948,54 +973,23 @@
                 background-color: @surface0 !important;
             }
         }
-        .s.a {
-            background-color: @surface0 !important;
-            
-            // stop code
-            .uo {
-                background-color: @red !important;
-                color: @base !important;
-            }
-            
-            // run code
-            .ho {
-                background-color: @green !important;
-                div > svg > path {
-                    color: @base !important;
-                }
-
-                div {
-                    color: @base !important;
-                }
-            }
-            // check code
-            .button {
-                background-color: @pink !important;
-                color: @base !important;
-            }
-        }
+        
         #grading-unit-test-run {
             background-color: @accent-color !important;
             span {
-                
+
                 color: @base !important;
             }
-        }
-        // test-cases min / expand
+        } // test-cases min / expand
         .expand-minimize {
             button {
                 background-color: @surface0;
                 border-color: @surface0;
             }
-        }
-        
-        
-        // grading bar
+        } // grading bar
         #green-bar {
             background-color: @green !important;
-        }
-        
-        // test-cases grader table
+        } // test-cases grader table
         #grading-container > table {
             thead {
                 background-color: @base !important;
@@ -1011,7 +1005,7 @@
             }
             tbody {
                 tr {
-                        border-color: @surface1 !important;
+                    border-color: @surface1 !important;
                     th.bottom-border {
                         color: @base !important;
                     }
@@ -1028,26 +1022,21 @@
                     }
                 }
             }
-            
-        }
-        
-        
-        // notes page
+        } // notes page
         .assignments-page {
             background-color: @base !important;
             .wrap {
                 color: @text !important;
                 background-color: @surface0 !important;
-                
-                .ql-toolbar > .ql-formats > button > svg, .ql-toolbar > .ql-formats > span >span svg {
+
+                .ql-toolbar > .ql-formats > button > svg,
+                .ql-toolbar > .ql-formats > span > span svg {
                     * {
                         stroke: @text !important;
-                        
                     }
                 }
             }
-        }
-        // account settings
+        } // account settings
         .btn-main {
             background-color: @accent-color !important;
             color: @base !important;
@@ -1068,16 +1057,14 @@
         #download-code-button {
             background-color: @surface0 !important;
         }
-        
+
         a.btn.btn-main-slate {
             background-color: @surface0 !important;
-        }
-        
-        // navbar, notifications
-        #logged-in-navbar { 
+        } // navbar, notifications
+        #logged-in-navbar {
             background-color: @mantle !important;
             #notification-menu {
-            background-color: @surface0 !important;
+                background-color: @surface0 !important;
                 li {
                     color: @text !important;
                     &.dropdown-label {
@@ -1091,12 +1078,10 @@
                         span {
                             color: @base !important;
                         }
-    
                     }
-                } 
+                }
             }
-        }
-        // certs
+        } // certs
         #certifications-page {
             background-color: @base !important;
             #learn-more-btn {
@@ -1114,18 +1099,13 @@
                     }
                 }
             }
-        }
-        
-        // badges
-        
+        } // badges
         .all-badges-page .wrapper .all-badges-content div {
             background-color: @base !important;
-        }
-    
-        // practice
+        } // practice
         #practice-wrapper {
             background-color: @base !important;
-            .practice-top-nav-languages .playlist-option{
+            .practice-top-nav-languages .playlist-option {
                 background-color: @surface0 !important;
                 border-color: @surface1 !important;
                 a {
@@ -1137,64 +1117,53 @@
                 }
             }
             #practice-page-content .practice-section .practice-modules {
-                
+
                 .practice-problem-container {
                     .practice-module {
                         background-color: @surface0 !important;
-                        .module-title-right span{
+                        .module-title-right span {
                             color: @accent-color !important;
                         }
                     }
                 }
-                
             }
-        }
-        
-        // faq
+        } // faq
         .marketing-page-new {
             background-color: @base !important;
             .faq-content .faq-list .faq-question span {
                 color: @accent-color !important;
             }
-        }
-        
-        // announcments
+        } // announcments
         .announcements-dropdown {
             background-color: @surface0 !important;
             border-color: @surface1 !important;
-        }
-
-        // shared programs
-        .shared-programs-container .wrap  {
+        } // shared programs
+        .shared-programs-container .wrap {
             ul li.shared-item {
                 background-color: @surface0 !important;
                 a {
                     color: @blue !important;
                 }
             }
-        }
-        
-        // sandbox quickstart
+        } // sandbox quickstart
         .page-body {
             background-color: @base !important;
-            
         }
         label.progtype-label input {
             accent-color: @accent-color !important;
-        }
-        
-        // QOTD
-        
+        } // QOTD
         #quiz-docs-toggle {
             background-color: @accent-color !important;
-            &, span {
+            &,
+            span {
                 color: @base !important;
             }
         }
         .check-answer-button {
             background-color: @peach !important;
         }
-        .qotd-message, .qotd-subscribe-banner {
+        .qotd-message,
+        .qotd-subscribe-banner {
             background-color: @blue !important;
             color: @mantle !important;
             * {
@@ -1203,7 +1172,8 @@
         }
         .qotd-subscribe-banner {
             a {
-                border-color: @accent-color !important;;
+                border-color: @accent-color !important;
+                ;
             }
         }
         .marketing-course-card {
@@ -1211,10 +1181,9 @@
             &::before {
                 background-color: @overlay0 !important;
             }
-        }
-        
-        // career center (make it readable)
-        .industries-section-header-content, .industries-section {
+        } // career center (make it readable)
+        .industries-section-header-content,
+        .industries-section {
             background-color: @base !important;
         }
         #footer #footer-content {
@@ -1222,10 +1191,7 @@
             .share.btn {
                 background-color: @base;
             }
-        }
-        
-        // glossary
-        
+        } // glossary
         #tool-utilities {
             background-color: @base !important;
         }
@@ -1236,9 +1202,7 @@
         .definition code {
             background-color: @surface0 !important;
             color: @accent-color !important;
-        }
-        
-        // join class
+        } // join class
         .wrap.text-left {
             background-color: @surface0 !important;
             form {
@@ -1251,30 +1215,28 @@
                     color: @base !important;
                 }
             }
-        }
-        
-        // textbooks
+        } // textbooks
         .textbook-card {
             background-color: @surface0 !important;
             .card-decoration {
                 background-color: @surface2 !important;
             }
         }
-        
-        
-       
-        
-        
+
+
+
+
+
         #directions-modal {
             div {
                 background-color: @surface0 !important;
                 border-color: @surface1 !important;
-                
+
                 &.top #close-button {
                     color: @text !important;
                     background-color: transparent !important;
                 }
-                
+
                 &.directions #markdown-description {
                     p > code {
                         background-color: @surface1;
@@ -1290,7 +1252,7 @@
                 }
             }
         }
-        
+
 
         /* Start styling your website here: */
         /*         background-color: @base; */
