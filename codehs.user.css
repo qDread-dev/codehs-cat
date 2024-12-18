@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.22
+@version 0.0.23
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -413,13 +413,7 @@
                 background-color: @crust !important;
             } // the rest of the sidebar
             .t {
-                // edge of sidebar
-                div.N.t {
-                    &,
-                    & > div {
-                        background-color: @crust !important;
-                    }
-                } // sidebar "assignment section"
+                // sidebar "assignment section"
                 div:not(.N.t) div #problem-sidebar {
                     background-color: @mantle !important;
                     #problem-sidebar-tabs {
@@ -460,9 +454,186 @@
                     }
                 }
             }
-        }
-        
-        // submit modal (quiz)
+
+            div.g > div.n {
+                div {
+                    div.e.J {
+                        background-color: @surface1 !important;
+                        border: 1px solid transparent !important;
+                    }
+                    div#file-tab-bar {
+                        background-color: @surface2 !important;
+
+                        div > div {
+                            span.fUWMBl {
+                                background-color: @surface0 !important;
+                                border-bottom: 3px solid @accent-color !important;
+                            }
+                            span.hhtNKK {
+                                background-color: @surface1 !important;
+                            }
+                        }
+                    }
+                }
+                div.L {
+                    //editor text space
+                    div > section > div > div.monaco-editor > div.overflow-guard > div.monaco-scrollable-element > div.lines-content {
+                        // editor text
+                        .view-lines {
+                            .view-line {
+
+                                // Attributes
+                                .mtk4 {
+                                    color: @red !important;
+                                } // String
+                                .mtk5 {
+                                    color: @green !important;
+                                } // Number
+                                .mtk6 {
+                                    color: @peach !important;
+                                } // Comments
+                                .mtk7 {
+                                    color: @overlay0 !important;
+                                    font-style: italic;
+                                }
+                                .mtk8 {
+                                    color: @accent-color !important;
+                                }
+                                .mtk9 {
+                                    color: @sapphire !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .w > div {
+                background-color: @surface1 !important;
+                border-color: @surface1 !important;
+            } // not the other div.n
+            div.n {
+                // right bar
+                #right-tab-bar {
+                    div.r {
+                        &.c {
+                            background-color: @base !important;
+                        }
+                        & {
+                            background-color: @surface0 !important; // dividor
+                            &::before {
+                                background-color: @overlay1 !important;
+                            }
+                        }
+                    }
+                }
+
+                .L {
+                    background-color: @base !important;
+                    div > div {
+
+                        // grading tab
+                        &.editor-tab-content > #grading-tab {
+                            #grading-container {
+                                table thead {
+                                    border-bottom: 2px solid white !important
+                                }
+                            } // error box
+                            div.error-box {
+                                ol.error-container li.error-entry {
+                                    background-color: @surface0 !important;
+                                    border-color: @surface1 !important;
+                                }
+                            }
+                        } // terminal top bar
+                        div.s.a {
+                            background-color: @base !important; // stop code
+                            .uo {
+                                background-color: @red !important;
+                                color: @base !important;
+                            } // run code
+                            .ho {
+                                background-color: @green !important;
+                                div > svg > path {
+                                    color: @base !important;
+                                }
+
+                                div {
+                                    color: @base !important;
+                                }
+                            } // check code
+                            .button {
+                                background-color: @pink !important;
+                                color: @base !important;
+                            }
+                        } // terminal container
+                        div.k.a {
+                            background-color: @base !important;
+                            div > .xterm-wrapper > .terminal {
+                                color: @text !important;
+                                background-color: @surface0 !important;
+                                border-color: @accent-color !important;
+                                .xterm-viewport,
+                                .xterm-viewport > * {
+                                    background-color: @surface0 !important;
+                                }
+                                .xterm-accessibility {
+                                    opacity: 0;
+                                }
+                            }
+                        } // grading pane
+                        div#lms-grading-tab {
+                            #assignment-grading-history > #assignment-grades-list > .wrap {
+                                background-color: @base !important;
+                                border: 2px solid @surface0 !important;
+                            }
+                        } // the grade badge
+                        .badge.bg-teal {
+                            background-color: @green !important;
+                            color: @base !important;
+                        }
+                        .badge.finalized {
+                            background-color: @overlay0 !important;
+                        }
+                        .badge.submitted {
+                            background-color: @green !important;
+                            color: @base !important;
+                        }
+                        &.editor-tab-content > #grading-tab {
+                            #grading-container {
+                                table thead {
+                                    border-bottom: 2px solid white !important
+                                }
+                            }
+
+                            div.error-box {
+                                ol.error-container li.error-entry {
+                                    background-color: @surface0 !important;
+                                    border-color: @surface1 !important;
+                                }
+                            }
+                        }
+
+                        .prism-highlight .markdown-exercise-description {
+                            pre:has(code) {
+                                background-color: @surface1 !important;
+                                border-color: @surface1 !important;
+                                code {
+                                    color: @accent-color !important;
+                                }
+                            }
+                            p:has(code) {
+                                border-color: @surface1 !important;
+                                code {
+                                    background-color: @surface1 !important;
+                                    color: @accent-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // submit modal (quiz)
         .modal-content {
             .modal-header {
                 background-color: @accent-color !important;
@@ -522,7 +693,6 @@
             }
         }
 
-
         .sandbox-program-container {
             .codehs-table-header {
                 background-color: @accent-color !important;
@@ -557,8 +727,6 @@
                 color: @base !important;
             }
         }
-
-
 
         #wrapper,
         #assignments-page-wrapper {
@@ -621,112 +789,22 @@
         /* Checkmarks for lessons */
         .lesson-opened {
             background-color: @surface1 !important;
-        }
-        
-        
-        #abacus #panels div.n {
-            #right-tab-bar {
-                div.r {
-                    &.c {
-                        background-color: @base !important;
-                    }
-                    & {
-                        background-color: @surface0 !important;
-                        // dividor
-                        &::before {
-                            background-color: @overlay1 !important;
-                            
-                        }
-                    }
+        } // inside editor
+        .t {
+            // edge of sidebar
+            div.N.t {
+                &,
+                & > div {
+                    background-color: @crust !important;
                 }
             }
-            
-            .L {
-                background-color: @base !important;
-                
-                div > div {
-                    // terminal tab top bar
-                    div.s.a {
-                        background-color: @base !important; 
-                                    // stop code
-                        .uo {
-                            background-color: @red !important;
-                            color: @base !important;
-                        } // run code
-                        .ho {
-                            background-color: @green !important;
-                            div > svg > path {
-                                color: @base !important;
-                            }
-            
-                            div {
-                                color: @base !important;
-                            }
-                        } // check code
-                        .button {
-                            background-color: @pink !important;
-                            color: @base !important;
-                        }
-                    }
-                    // terminal container
-                    div.k.a {
-                        background-color: @base !important;
-                        div > .xterm-wrapper > .terminal {
-                            color: @text !important;
-                            background-color: @surface0 !important;
-                            border-color: @accent-color !important;
-                            .xterm-viewport,
-                            .xterm-viewport > * {
-                                background-color: @surface0 !important;
-                            }
-                        }
-                    }
-                    
-                    // problem description
-                    .prism-highlight .markdown-exercise-description {
-                        pre:has(code) {
-                            background-color: @surface1 !important;
-                            border-color: @surface1 !important;
-                            code {
-                                color: @accent-color !important;
-                            }
-                        }
-                        p:has(code) {
-                            border-color: @surface1 !important;
-                            code {
-                                background-color: @surface1 !important;
-                                color: @accent-color !important;
-                            }
-                        }
-                    }
-                    // grading tab
-                    #lms-grading-tab-pane {
-                        background-color: @base !important;
-                        color: @text !important;
-                    }
-                    
-                    // test-cases tab
-                    &.editor-tab-content > #grading-tab {
-                        #grading-container {
-                            table thead {
-                                border-bottom: 2px solid white !important
-                            }
-                            
-                        }
-                        
-                        div.error-box {
-                            ol.error-container li.error-entry {
-                                background-color: @surface0 !important;
-                                border-color: @surface1 !important;
-                            }
-                        }
-                    }
+
+            div > .Je > div > ul {
+                li.c > span {
+                    background-color: @surface0 !important;
                 }
             }
-        } 
-        
-        // docs tab (out here as its an embed)
-        
+        } // docs tab (out here as its an embed)
         div#documentation-tab.tab-pane {
             background-color: @base;
             .docs-dropdown-nav {
@@ -738,23 +816,6 @@
 
 
 
-/*         #exercise-tab,
-        #grading-tab {
-            background-color: @surface0 !important;
-            color: @text !important;
-
-            .badge {
-                color: @base !important;
-            }
-            .submitted {
-                background-color: @green !important;
-            }
-            .points-badge {
-                background-color: @overlay0 !important;
-            }
-        } */
-        
-        
         .nav-tabs {
             li > a {
                 background-color: @surface1!important;
@@ -780,42 +841,14 @@
             }
         }
 
-        .xterm-accessibility {
-            opacity: 0;
-        }
+
         .sticky-header {
             background-color: @base !important;
         }
-        #file-tab-bar {
-            background-color: @surface1 !important;
-            div > div {
-                span.fUWMBl {
-                    background-color: @surface0 !important;
-                    border-bottom: 3px solid @accent-color !important;
-                }
-                span.hhtNKK {
-                    background-color: @surface1 !important;
-                    border-bottom: 3px solid @accent-color !important;
-                }
-            }
-        }
-        .w > div {
-            background-color: @surface1 !important;
-            border-color: @surface1 !important;
-        }
 
-        .n > div > .J {
-            background-color: @surface0 !important;
-            border-bottom: 1px solid @surface0 !important;
-        }
+
         .co {
             border-color: @accent-color !important;
-        }
-        .r {
-            background-color: @surface1 !important;
-            &.c {
-                background-color: @surface0 !important;
-            }
         }
 
         /* Grading tab */
@@ -832,32 +865,8 @@
                 background-color: @surface1 !important;
                 background-color: @surface1 !important;
             }
-        }
-        .L > div > div {
-            // the grade badge
-            .badge.bg-teal {
-                background-color: @green !important;
-                color: @base !important;
-            }
-            .badge.finalized {
-                background-color: @overlay0 !important;
-            }
-            .badge.submitted {
-                background-color: @green !important;
-                color: @base !important;
-            }
-        }
-        .L > div > div > .prism-highlight {
-            span > p > code {
-                background-color: @surface0 !important;
-                color: @accent-color !important;
-            }
         } // Assignment grading section
-        #assignment-grades-list {
-            .wrap {
-                background-color: @surface0 !important;
-            }
-        } // settings section
+        // settings section
         .iIJgxh {
             background-color: @surface0 !important;
             border-radius: 2px !important;
@@ -883,32 +892,7 @@
 
 
 
-        /* Editor Text */
-        .view-lines {
-            .view-line {
 
-                // Attributes
-                .mtk4 {
-                    color: @red !important;
-                } // String
-                .mtk5 {
-                    color: @green !important;
-                } // Number
-                .mtk6 {
-                    color: @peach !important;
-                } // Comments
-                .mtk7 {
-                    color: @overlay0 !important;
-                    font-style: italic;
-                }
-                .mtk8 {
-                    color: @accent-color !important;
-                }
-                .mtk9 {
-                    color: @sapphire !important;
-                }
-            }
-        }
 
         .monaco-editor-background,
         .margin-view-overlays {
@@ -938,42 +922,13 @@
         .ace_print-margin {
             visibility: hidden !important;
         }
-        #panels {
-            .t {
-                .N,
-                .N > div {
-                    /*                     background-color: @base !important; */
-                }
-                div > .Je {
-                    /*                     background-color: @surface0 !important; */
-                    div {
-                        ul {
-                            li {
-                                span {
-                                    background-color: @surface1 !important;
-                                }
-                            }
-                            li.c {
-                                span {
-                                    background-color: @surface0 !important;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .d,
-            .d > * {
-                /*                 background-color: @base !important; */
-            }
-        }
         .P {
             border-color: @surface1 !important;
             button {
                 background-color: @surface0 !important;
             }
         }
-        
+
         #grading-unit-test-run {
             background-color: @accent-color !important;
             span {
