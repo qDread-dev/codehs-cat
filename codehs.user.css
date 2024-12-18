@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.23
+@version 0.0.24
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -82,6 +82,10 @@
             &::placeholder {
                 color: @subtext0 !important;
             }
+        }
+
+        * {
+            color: @text !important;
         }
 
         body {
@@ -477,32 +481,38 @@
                 }
                 div.L {
                     //editor text space
-                    div > section > div > div.monaco-editor > div.overflow-guard > div.monaco-scrollable-element > div.lines-content {
-                        // editor text
-                        .view-lines {
-                            .view-line {
+                    div > section > div > div.monaco-editor > div.overflow-guard {
+                        div.monaco-scrollable-element > div.lines-content {
+                            // editor text
+                            .view-lines {
+                                .view-line {
 
-                                // Attributes
-                                .mtk4 {
-                                    color: @red !important;
-                                } // String
-                                .mtk5 {
-                                    color: @green !important;
-                                } // Number
-                                .mtk6 {
-                                    color: @peach !important;
-                                } // Comments
-                                .mtk7 {
-                                    color: @overlay0 !important;
-                                    font-style: italic;
-                                }
-                                .mtk8 {
-                                    color: @accent-color !important;
-                                }
-                                .mtk9 {
-                                    color: @sapphire !important;
+                                    // Attributes
+                                    .mtk4 {
+                                        color: @red !important;
+                                    } // String
+                                    .mtk5 {
+                                        color: @green !important;
+                                    } // Number
+                                    .mtk6 {
+                                        color: @peach !important;
+                                    } // Comments
+                                    .mtk7 {
+                                        color: @overlay0 !important;
+                                        font-style: italic;
+                                    }
+                                    .mtk8 {
+                                        color: @accent-color !important;
+                                    }
+                                    .mtk9 {
+                                        color: @sapphire !important;
+                                    }
                                 }
                             }
+                        }
+                        .monaco-editor-background,
+                        .margin-view-overlays {
+                            background-color: @base;
                         }
                     }
                 }
@@ -720,6 +730,7 @@
                 }
             }
         }
+
         .explore-container {
             background-color: @surface0 !important;
             a {
@@ -728,8 +739,9 @@
             }
         }
 
-        #wrapper,
-        #assignments-page-wrapper {
+
+
+        div#all-assignments-page > main#assignments-page-wrapper {
 
             #left {
                 .action {
@@ -750,9 +762,7 @@
             background-color: @base !important;
         }
 
-        * {
-            color: @text !important;
-        }
+
         tbody {
 
             tr {
@@ -894,10 +904,7 @@
 
 
 
-        .monaco-editor-background,
-        .margin-view-overlays {
-            background-color: @base;
-        }
+
 
         #codehs-editor {
             color: @text !important;
