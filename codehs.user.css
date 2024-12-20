@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.26
+@version 0.0.27
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -149,6 +149,9 @@
             }
         }
         #student-sidenav-beta {
+
+            // fix edges being wrong color
+            background-color: transparent !important;
             .sidenav-header {
                 background-color: @base !important;
             }
@@ -185,19 +188,19 @@
                 }
             }
 
-            
-            
-            
+
+
+
             #resume-div {
-                
+
                 img {
-                                        filter: brightness(2000%);
+                    filter: brightness(2000%);
                 }
             }
             #course-sec {
-                
-                 img {
-                    
+
+                img {
+
                     filter: brightness(2000%);
                 }
                 .module-sec {
@@ -540,30 +543,10 @@
                 // right bar
                 #right-tab-bar {
                     div.r {
-                        &.c {
+                        &.c .L {
                             background-color: @base !important;
-                        }
-                        & {
-                            background-color: @surface0 !important; // dividor
-                            &::before {
-                                background-color: @overlay1 !important;
-                            }
-                        }
-                    }
-                }
+                            div > div {
 
-                .L {
-                    background-color: @base !important;
-                    div > div {
-
-                        // grading tab
-                        &.editor-tab-content > #grading-tab {
-                            #grading-container {
-                                table thead {
-                                    border-bottom: 2px solid white !important
-                                }
-                            } // error box
-                            div.error-box {
                                 ol.error-container li.error-entry {
                                     background-color: @surface0 !important;
                                     border-color: @surface1 !important;
@@ -804,8 +787,23 @@
 
 
 
+        #tool-topnav {
+
+            background-color: @surface1 !important;
+        }
+
+
+        .dropdown-menu {
+
+            li:nth-child(even) {
+                background-color: @surface1 !important;
+            }
+            li:nth-child(odd) {
+                background-color: @surface2 !important;
+            }
+        }
         .progressbar {
-            
+
             background-color: @surface2 !important;
             .bg-slate {
                 background-color: @accent-color !important;
@@ -1197,7 +1195,7 @@
         .textbook-card {
             background-color: @surface0 !important;
             .card-decoration {
-                background-color: @surface0 !important;
+                background-color: @surface2 !important;
             }
         }
 
@@ -1214,11 +1212,12 @@
                 background-color: @surface0 !important;
 
 
-                span.activity-box { /*  if > 20 */
+                span.activity-box {
+                    /*  if > 20 */
                     background-color: @accent-color !important
                 }
-                span[data-count="0"] {  /* default  */
-
+                span[data-count="0"] {
+                    /* default  */
                     background-color: @surface2 !important;
                 }
 
