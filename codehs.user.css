@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.27
+@version 0.0.28
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
-@author qdread-dev
+@author qdread-dev TEEJIO
 @license Apache 2.0
 
 @preprocessor less
@@ -579,6 +579,12 @@
                 }
                 .L {
                     background-color: @base !important;
+                    span{
+                        background-color: transparent !important;
+                    }
+                    strong{
+                        background-color: transparent !important;
+                    }
                     div > div {
                         // grading tab
                         &.editor-tab-content > #grading-tab {
