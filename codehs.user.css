@@ -778,6 +778,7 @@
 
         .explore-container {
             background-color: @surface0 !important;
+            
             a {
                 background-color: @accent-color !important;
                 color: @base !important;
@@ -853,6 +854,7 @@
             li a:hover{
                  
                  background-color: @accent-color !important;
+                 color: @base !important; /* evils */
                 div {
                         color: @base !important;
                     
