@@ -542,11 +542,43 @@
             div.n {
                 // right bar
                 #right-tab-bar {
+                    
+                    
+                    .y {
+                        
+                        div.r:nth-child(even){
+                             background-color: @overlay1 !important;
+                        }
+                        
+                                                
+                        div.r:nth-child(odd){
+                             background-color: @overlay0 !important;
+                        }
+                    }
                     div.r {
-                        &.c .L {
+                        &.c {
                             background-color: @base !important;
-                            div > div {
-
+                             }
+                        & {
+                            background-color: @surface0 !important; // dividor
+                            &::before {
+                                background-color: @overlay1 !important;
+                            }
+                        }
+                    }
+                }
+                .L {
+                    background-color: @base !important;
+                    div > div {
+                        // grading tab
+                        &.editor-tab-content > #grading-tab {
+                            #grading-container {
+                                table thead {
+                                    border-bottom: 2px solid white !important
+                                }
+                            } // error box
+                            div.error-box {
+      
                                 ol.error-container li.error-entry {
                                     background-color: @surface0 !important;
                                     border-color: @surface1 !important;
