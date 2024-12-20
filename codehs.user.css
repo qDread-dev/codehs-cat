@@ -848,6 +848,16 @@
             }
             li:nth-child(odd) {
                 background-color: @surface2 !important;
+                
+            }
+            li a:hover{
+                 
+                 background-color: @accent-color !important;
+                div {
+                        color: @base !important;
+                    
+                }
+                
             }
         }
         .progressbar {
