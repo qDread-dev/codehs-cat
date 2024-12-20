@@ -510,19 +510,29 @@
                                     } // String
                                     .mtk5 {
                                         color: @green !important;
-                                    } // Number
+                                    }
+                                    // primitives
                                     .mtk6 {
-                                        color: @peach !important;
-                                    } // Comments
+                                        color: @accent-color !important;
+                                    }
+                                    
+                                    // Numbers
                                     .mtk7 {
-                                        color: @overlay0 !important;
+                                        color: @teal !important;
                                         font-style: italic;
                                     }
+                                    
+                                    
+                                    // Comments 
                                     .mtk8 {
-                                        color: @accent-color !important;
+                                        color: @overlay0 !important;
                                     }
                                     .mtk9 {
                                         color: @sapphire !important;
+                                    }
+                                    // No this is string fr fr
+                                    .mtk20 {
+                                        color: @peach !important;
                                     }
                                 }
                             }
