@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.26
+@version 0.0.27
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
 @description Soothing pastel theme for CodeHS
 @author qdread-dev
@@ -149,6 +149,8 @@
             }
         }
         #student-sidenav-beta {
+            // fix edges being wrong color
+            background-color: transparent !important;
             .sidenav-header {
                 background-color: @base !important;
             }
