@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
 @namespace https://github.com/qDread-dev/codehs-cat
-@version 0.0.27
+@version 0.0.28
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
-@description Soothing pastel theme for CodeHS
+@description Soothing pastel theme for CodeHS. By qdread-dev and TEEJIO
 @author qdread-dev
 @license Apache 2.0
 
@@ -149,6 +149,7 @@
             }
         }
         #student-sidenav-beta {
+
             // fix edges being wrong color
             background-color: transparent !important;
             .sidenav-header {
@@ -187,7 +188,21 @@
                 }
             }
 
+
+
+
+            #resume-div {
+
+                img {
+                    filter: brightness(2000%);
+                }
+            }
             #course-sec {
+
+                img {
+
+                    filter: brightness(2000%);
+                }
                 .module-sec {
                     .lesson-item-wrapper {
                         color: @text !important;
@@ -495,19 +510,29 @@
                                     } // String
                                     .mtk5 {
                                         color: @green !important;
-                                    } // Number
+                                    }
+                                    // primitives
                                     .mtk6 {
-                                        color: @peach !important;
-                                    } // Comments
+                                        color: @accent-color !important;
+                                    }
+                                    
+                                    // Numbers
                                     .mtk7 {
-                                        color: @overlay0 !important;
+                                        color: @teal !important;
                                         font-style: italic;
                                     }
+                                    
+                                    
+                                    // Comments 
                                     .mtk8 {
-                                        color: @accent-color !important;
+                                        color: @overlay0 !important;
                                     }
                                     .mtk9 {
                                         color: @sapphire !important;
+                                    }
+                                    // No this is string fr fr
+                                    .mtk20 {
+                                        color: @green !important;
                                     }
                                 }
                             }
@@ -527,10 +552,23 @@
             div.n {
                 // right bar
                 #right-tab-bar {
+                    
+                    
+                    .y {
+                        
+                        div.r:nth-child(even){
+                             background-color: @surface1 !important;
+                        }
+                        
+                                                
+                        div.r:nth-child(odd){
+                             background-color: @surface0 !important;
+                        }
+                    }
                     div.r {
                         &.c {
                             background-color: @base !important;
-                        }
+                             }
                         & {
                             background-color: @surface0 !important; // dividor
                             &::before {
@@ -539,11 +577,15 @@
                         }
                     }
                 }
-
                 .L {
                     background-color: @base !important;
+                    span{
+                        background-color: transparent !important;
+                    }
+                    strong{
+                        background-color: transparent !important;
+                    }
                     div > div {
-
                         // grading tab
                         &.editor-tab-content > #grading-tab {
                             #grading-container {
@@ -552,6 +594,7 @@
                                 }
                             } // error box
                             div.error-box {
+      
                                 ol.error-container li.error-entry {
                                     background-color: @surface0 !important;
                                     border-color: @surface1 !important;
@@ -735,6 +778,7 @@
 
         .explore-container {
             background-color: @surface0 !important;
+            
             a {
                 background-color: @accent-color !important;
                 color: @base !important;
@@ -792,7 +836,35 @@
 
 
 
+        #tool-topnav {
+
+            background-color: @surface1 !important;
+        }
+
+
+        .dropdown-menu {
+
+            li:nth-child(even) {
+                background-color: @surface1 !important;
+            }
+            li:nth-child(odd) {
+                background-color: @surface2 !important;
+                
+            }
+            li a:hover{
+                 
+                 background-color: @accent-color !important;
+                 color: @base !important; /* evils */
+                div {
+                        color: @base !important;
+                    
+                }
+                
+            }
+        }
         .progressbar {
+
+            background-color: @surface2 !important;
             .bg-slate {
                 background-color: @accent-color !important;
             }
@@ -1186,13 +1258,119 @@
                 background-color: @surface2 !important;
             }
         }
-        
+
         #wrapper {
-            background-color: @base !important;   
+            background-color: @base !important;
         }
 
 
 
+        .activity-display-container {
+
+            .activity-display {
+
+                background-color: @surface0 !important;
+
+
+                span.activity-box {
+                    /*  if > 20 */
+                    background-color: @accent-color !important
+                }
+                span[data-count="0"] {
+                    /* default  */
+                    background-color: @surface2 !important;
+                }
+
+
+                /* we yandere deving this shit */
+                span[data-count="1"] {
+                    background-color: color-mix(in oklab, @accent-color 5%, @surface1 95%) !important
+                }
+                span[data-count="2"] {
+                    background-color: color-mix(in oklab, @accent-color 10 @surface1 90%) !important
+                }
+                span[data-count="3"] {
+                    background-color: color-mix(in oklab, @accent-color 15%, @surface1 85%) !important
+                }
+                span[data-count="4"] {
+                    background-color: color-mix(in oklab, @accent-color 20%, @surface1 80%) !important
+                }
+                span[data-count="5"] {
+                    background-color: color-mix(in oklab, @accent-color 25%, @surface1 75%) !important
+                }
+                span[data-count="6"] {
+                    background-color: color-mix(in oklab, @accent-color 30%, @surface1 70%) !important
+                }
+                span[data-count="7"] {
+                    background-color: color-mix(in oklab, @accent-color 35%, @surface1 65%) !important
+                }
+                span[data-count="8"] {
+                    background-color: color-mix(in oklab, @accent-color 40%, @surface1 60%) !important
+                }
+                span[data-count="9"] {
+                    background-color: color-mix(in oklab, @accent-color 45%, @surface1 55%) !important
+                }
+                span[data-count="10"] {
+                    background-color: color-mix(in oklab, @accent-color 50%, @surface1 50%) !important
+                }
+                span[data-count="11"] {
+                    background-color: color-mix(in oklab, @accent-color 55%, @surface1 45%) !important
+                }
+                span[data-count="12"] {
+                    background-color: color-mix(in oklab, @accent-color 60% @surface1 40%) !important
+                }
+                span[data-count="13"] {
+                    background-color: color-mix(in oklab, @accent-color 65%, @surface1 35%) !important
+                }
+                span[data-count="14"] {
+                    background-color: color-mix(in oklab, @accent-color 70%, @surface1 30%) !important
+                }
+                span[data-count="15"] {
+                    background-color: color-mix(in oklab, @accent-color 75%, @surface1 25%) !important
+                }
+                span[data-count="16"] {
+                    background-color: color-mix(in oklab, @accent-color 80%, @surface1 20%) !important
+                }
+                span[data-count="17"] {
+                    background-color: color-mix(in oklab, @accent-color 85%, @surface1 15%) !important
+                }
+                span[data-count="18"] {
+                    background-color: color-mix(in oklab, @accent-color 90%, @surface1 10%) !important
+                }
+                span[data-count="19"] {
+                    background-color: color-mix(in oklab, @accent-color 95%, @surface1 5%) !important
+                }
+            }
+
+            .legend {
+                background-color: @surface0 !important;
+
+
+                .legend-box {
+
+
+                    &[data-count="20"] {
+                        background-color: @accent-color !important
+                    }
+                    &[data-count="0"] {
+
+                        background-color: @surface1 !important;
+                    }
+                    &[data-count="5"] {
+
+                        background-color: color-mix(in oklab, @accent-color 25%, @surface0 75%) !important
+                    }
+                    &[data-count="10"] {
+
+                        background-color: color-mix(in oklab, @accent-color 50%, @surface0 50%) !important
+                    }
+                    &[data-count="15"] {
+
+                        background-color: color-mix(in oklab, @accent-color 75%, @surface0 25%) !important
+                    }
+                }
+            }
+        }
 
 
         #directions-modal {
