@@ -562,7 +562,7 @@
                         
                                                 
                         div.r:nth-child(odd){
-                             background-color: @overlay0 !important;
+                             background-color: @surface0 !important;
                         }
                     }
                     div.r {
