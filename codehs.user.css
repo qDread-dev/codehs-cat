@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
-@version 0.0.32
+@version 0.0.33
 @description Soothing pastel theme for CodeHS. By qdread-dev and TEEJIO
 @namespace https://github.com/qDread-dev
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
@@ -1161,6 +1161,19 @@
                         background-color: @surface0 !important;
                         .module-title-right span {
                             color: @accent-color !important;
+                        }
+                        
+                        // assignment titles
+                        .assignments > .assignment-title > p > i {
+                            &.finalized {
+                                color: @green !important;
+                            }
+                            &.not-submitted {
+                                color: @yellow !important;
+                            }
+                            &.unopened {
+                                color: @overlay0 !important;
+                            }
                         }
                     }
                 }
