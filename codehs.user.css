@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
-@version 0.0.29
+@version 0.0.30
 @description Soothing pastel theme for CodeHS. By qdread-dev and TEEJIO
 @namespace https://github.com/qDread-dev
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
@@ -514,21 +514,21 @@
                                         color: @green !important;
                                     }
                                     // primitives
-                                    .mtk6 {
+                                    .mtk8 {
                                         color: @accent-color !important;
                                     }
                                     
                                     // Numbers
-                                    .mtk7 {
+                                    .mtk6 {
                                         color: @teal !important;
-                                        font-style: italic;
                                     }
-                                    
                                     
                                     // Comments 
-                                    .mtk8 {
+                                    .mtk7 {
                                         color: @overlay0 !important;
+                                        font-style: italic;
                                     }
+                                    // symbols
                                     .mtk9 {
                                         color: @sapphire !important;
                                     }
