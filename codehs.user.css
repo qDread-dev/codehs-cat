@@ -839,8 +839,9 @@
 
 
 
-        #tool-topnav {
+        body >nav#tool-topnav {
             background-color: @surface0 !important;
+            box-shadow: rgba(@surface0, 0.1) 0px .5px 3px 0px !important;
         }
 
 
