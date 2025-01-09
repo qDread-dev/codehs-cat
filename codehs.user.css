@@ -153,12 +153,13 @@
         #student-sidenav-beta {
 
             // fix edges being wrong color
-            background-color: transparent !important;
+            background-color: @base !important;
             .sidenav-header {
                 background-color: @base !important;
             }
             #sidenav-top-level {
                 background-color: @surface0;
+                border-color: transparent !important;
             }
             button {
                 background-color: @surface0;
