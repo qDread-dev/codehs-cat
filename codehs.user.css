@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
-@version 0.0.30
+@version 0.0.31
 @description Soothing pastel theme for CodeHS. By qdread-dev and TEEJIO
 @namespace https://github.com/qDread-dev
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
@@ -1265,7 +1265,27 @@
             background-color: @base !important;
         }
 
-
+        .activity-placeholder {
+            .activity-skeleton {
+                background-color: @surface0 !important;
+                
+                .activity-skeleton-grid {
+                    background-color: @surface2 !important;
+                    background-image: 
+                        linear-gradient(to right, @surface0 3px, transparent 1px),
+                        linear-gradient(to bottom, @surface0 3px, transparent 1px);
+                }
+            }
+            .activity-skeleton-legend {
+                    background-color: @accent-color;
+                
+                div {
+                    background-color: @overlay0;
+                    opacity: 0.5;
+                    border-radius: 3px;
+                }
+            }
+        }
 
         .activity-display-container {
 
