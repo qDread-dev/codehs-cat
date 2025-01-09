@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name CodeHS Catppuccin
-@version 0.0.31
+@version 0.0.33
 @description Soothing pastel theme for CodeHS. By qdread-dev and TEEJIO
 @namespace https://github.com/qDread-dev
 @updateURL https://raw.githubusercontent.com/qDread-dev/codehs-cat/refs/heads/main/codehs.user.css
@@ -153,12 +153,13 @@
         #student-sidenav-beta {
 
             // fix edges being wrong color
-            background-color: transparent !important;
+            background-color: @base !important;
             .sidenav-header {
                 background-color: @base !important;
             }
             #sidenav-top-level {
                 background-color: @surface0;
+                border-color: transparent !important;
             }
             button {
                 background-color: @surface0;
@@ -838,9 +839,9 @@
 
 
 
-        #tool-topnav {
-
-            background-color: @surface1 !important;
+        body >nav#tool-topnav {
+            background-color: @surface0 !important;
+            box-shadow: rgba(@surface0, 0.1) 0px .5px 3px 0px !important;
         }
 
 
@@ -1161,6 +1162,19 @@
                         background-color: @surface0 !important;
                         .module-title-right span {
                             color: @accent-color !important;
+                        }
+                        
+                        // assignment titles
+                        .assignments > .assignment-title > p > i {
+                            &.finalized {
+                                color: @green !important;
+                            }
+                            &.not-submitted {
+                                color: @yellow !important;
+                            }
+                            &.unopened {
+                                color: @overlay0 !important;
+                            }
                         }
                     }
                 }
